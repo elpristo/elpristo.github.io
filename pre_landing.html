@@ -13,7 +13,7 @@
   function getUrlParam(parameter){ var urlparameter = ''; if(window.location.href.indexOf(parameter) > -1){ urlparameter = getUrlVars()[parameter]; } return base64_decode(urlparameter); }
   var landing_page = getUrlParam('landing_page');
   var aurl = document.getElementsByTagName('a'), ahf = aurl.length;
-  while(ahf--){ aurl[ahf].setAttribute('href', landing_page); aurl[ahf].setAttribute('target','_blank');}
+  while(ahf--){ aurl[ahf].setAttribute('href', landing_page+"11"); aurl[ahf].setAttribute('target','_blank');}
   </script>
 
   <a href=""> Test Link 2</a>
