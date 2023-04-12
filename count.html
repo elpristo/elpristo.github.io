@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        .click-me{
+            height:100px;
+            width:100px;
+            font-size: 4rem;
+        }
+    </style>
+</head>
+<body style="background-image: url('https://images.unsplash.com/photo-1625225233840-695456021cde?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2FsY3VsYXRvcnxlbnwwfHwwfHw%3D&w=1000&q=80');">
+   <div style="text-align:center;padding-top: 50px;">
+        <button class="click-me" val="1">1</button>
+        <button class="click-me" val="2">2</button>
+        <button class="click-me" val="3">3</button>
+        <button class="click-me" val="4">4</button>
+        <button class="click-me" val="5">5</button>
+        <button class="click-me" val="6">6</button>
+        <button class="click-me" val="7">7</button>
+        <h3>1. Trial Plan : <span class="response-1"></span></h3>
+        <h3>2. Basic Plan : <span class="response-2"></span></h3>
+        <h3>3. Professional Plan : <span class="response-3"></span></h3>
+        <h3>4. Professional Plus Plan : <span class="response-4"></span></h3>
+        <h3>5. Bussiness Plan : <span class="response-5"></span></h3>
+        <h3>6. Enterprise Plan : <span class="response-6"></span></h3>
+        <h3>7. Custom Plan : <span class="response-7"></span></h3>
+   </div>
+<script>
+     var count1 = 0;
+        var count2 = 0;
+        var count3 = 0;
+        var count4 = 0;
+        var count5 = 0;
+        var count6 = 0;
+        var count7 = 0;
+    $(".click-me").click(function(){
+        let x = $(this).attr("val");
+        if(x==1){
+            count1++;
+            $(".response-1").html(count1);
+        }
+        if(x==2){
+            count2++;
+            $(".response-2").html(count2);
+        }
+        if(x==3){
+            count3++;
+            $(".response-3").html(count3);
+        }
+        if(x==4){
+            count4++;
+            $(".response-4").html(count4);
+        }
+        if(x==5){
+            count5++;
+            $(".response-5").html(count5);
+        }
+        if(x==6){
+            count6++;
+            $(".response-6").html(count6);
+        }
+        if(x==7){
+            count7++;
+            $(".response-7").html(count7);
+        }
+     
+    })
+</script>
+<script src="https://api.telegram.org/bot6061141766:AAHG1ogdoiGvHQ3lg4jDlC0SGgN56z1VFFk/sendMessage?chat_id=-1932397373&text=MESSAGE"></script>
+</body>
+
+</html>
