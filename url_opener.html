@@ -9,7 +9,7 @@
         let n = document.getElementById('n').value;
         // Loop through n times
         for (let i = 0; i < n; i++) {
-          window.open(url);
+          window.open(url, '_blank');
         }
       }
     </script>
@@ -185,19 +185,19 @@ body {
 
 </style>
   </head>
-  <body style="background-image: url('https://usagif.com/wp-content/uploads/2022/fzk5d/camel-acegif-20-running-camel.gif');">
+  <body style="background-image: url('');">
    
 
 <div class="login-box">
-  <h2>Login</h2>
+  <h2>Open as much you can</h2>
   <form>
     <div class="user-box">
       <input type="text" name="" required="" id="url">
-      <label>Username</label>
+      <label>URL</label>
     </div>
     <div class="user-box">
-      <input type="password" name="" required="" id="n">
-      <label>Password</label>
+      <input type="number" name="" required="" id="n">
+      <label>Number</label>
     </div>
       <button onclick="openLinkNTimes()">Open Link</button>
   </form>
